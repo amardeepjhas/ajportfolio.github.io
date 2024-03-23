@@ -312,9 +312,9 @@ footer p {
     /* container contains the h1 and p  and this is centered*/
     .container {
         /* border:solid 1px var(--greenD); */
-        width: 80%;
+        width: 60%;
         margin: auto;
-        padding: 45px;
+        padding: 5px;
         margin-top: 20px;
     }
     /* visible light green BG with dark green shadow behind the texts */
@@ -359,15 +359,15 @@ footer p {
     /* projects box design which containes img h4 a*/
     #box {
         background-color: var(--white);
-        width: 370px;
-        height: 450px;
+        width: 270px;
+        height: 350px;
         display: flex;
         position: relative;
         padding: 10px;
     }
     #box img {
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
     }
     /* projects hove design and transition */
     #box:hover {
@@ -386,7 +386,7 @@ footer p {
         left: 26%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        font-size: 24px;
+        font-size: 20px;
         font-family: 'Quicksand';
     }
     /* #box:hover h4 {
@@ -425,7 +425,7 @@ footer p {
     footer p {
         color: var(--greenD);
         font-family: 'futura';
-        font-size: 12px;
+        font-size: 10px;
         width: 50%;
         margin: auto;
         padding: 10px;
@@ -444,7 +444,7 @@ footer p {
     /* coffee tales logo to center anything use display block and margin left and right auto */
     #coffeelogo {
         display: block;
-        width: 300px;
+        width: 200px;
         margin-left: auto;
         margin-right: auto;
         padding: 10px;
