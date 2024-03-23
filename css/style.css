@@ -15,8 +15,31 @@
     --pink: #FFC2D1;
     --black: #303030;
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+    border: 1px solid var(--greenD);
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 /* ***********************PROJECT PAGE*********************** */
-
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 .header {
     /* position: relative; */
     width: 100%;
@@ -258,4 +281,256 @@ footer p {
     margin-right: auto;
     width: 60%;
 }
+
+}
+/* *********************************************** MOBILE ********************************************** */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .header {
+        /* position: relative; */
+        width: 100%;
+        height: 100px;
+        background-color: var(--white);
+        /* border-bottom:1px solid var(--greenD); */
+    }
+    #logo {
+        /* position: absolute; */
+        display: block;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    /* section1 background and its size*/
+    .feature { 
+        background-color: var(--white);
+        width: 100%;
+        height: 400px;
+        display: flex;
+    }
+    /* container contains the h1 and p  and this is centered*/
+    .container {
+        /* border:solid 1px var(--greenD); */
+        width: 80%;
+        margin: auto;
+        padding: 45px;
+        margin-top: 20px;
+    }
+    /* visible light green BG with dark green shadow behind the texts */
+    /* .introcont {
+        background-color: var(--greenL);
+        box-shadow: 10px 10px 20px var(--greenD);
+        padding: 20px;
+    } */
+    /* h1 in section1 */
+    #introtitle {
+        color: var(--greenD);
+        text-align: center;
+        margin: 15px;
+        font-size: 26px;
+        font-family: 'Quicksand';
+    }
+    /* p in section1 */
+    p {
+        color: var(--black);
+        line-height: 22px;
+        font-size: 14px;
+        font-family: 'Futura';
+        text-align: center;
+    }
+    /* section2 background and its size */
+    .project {
+        background-color: var(--greenL);
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    /* position of the grid and gap */
+    .project-block {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 40px;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    /* projects box design which containes img h4 a*/
+    #box {
+        background-color: var(--white);
+        width: 370px;
+        height: 450px;
+        display: flex;
+        position: relative;
+        padding: 10px;
+    }
+    #box img {
+        width: 350px;
+        height: 350px;
+    }
+    /* projects hove design and transition */
+    #box:hover {
+        background-color: var(--white);
+        box-shadow: 1px 1px 10px var(--greenD);
+        padding: 10px;
+        transition: scaleY(20px 10px);
+    }
+    #box h4 {
+        /* background-color: var(--white); */
+        color: var(--greenD);
+        transition: 0.5s ease;
+        opacity: 1;
+        position: absolute;
+        top: 87%;
+        left: 26%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-family: 'Quicksand';
+    }
+    /* #box:hover h4 {
+        color: var(--greenD);
+        opacity: 1;
+    } */
+    #box a {
+        padding: 8px;
+        background-color: var(--greenD);
+        text-decoration: none;
+        color: var(--white);
+        transition: 0.5s ease;
+        opacity: 1;
+        position: absolute;
+        top: 87%;
+        left: 89%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        border-radius: 10px;
+        font-family: 'futura';
+    }
+    #box a:hover {
+        cursor: pointer;
+        background: var(--greenL);
+        color: var(--greenD);
+        position: absolute;
+    }
+    #box:hover a {
+        opacity: 1;
+    }
+    footer {
+        background-color: var(--white);
+        width: 100%;
+        height: 150px;
+    }
+    footer p {
+        color: var(--greenD);
+        font-family: 'futura';
+        font-size: 12px;
+        width: 50%;
+        margin: auto;
+        padding: 10px;
+    }
+    /* ********************* Coffee Tales ******************************* */
+    .headerCT {
+        background-color: #EEDFDA;
+    }
+    /* section1 background and its size*/
+    .featureCT {
+        background-color: #EEDFDA;
+        width: 100%;
+        height: 400px;
+        display: flex;
+    }
+    /* coffee tales logo to center anything use display block and margin left and right auto */
+    #coffeelogo {
+        display: block;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    /* section2 background and its size */
+    .visualCT {
+        background-color: #EEDFDA;
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    /* position of the grid and gap */
+    .visual-block {
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 40px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    /* projects box design which containes img h4 a*/
+    /* #imgbox {
+        background-color: #EEDFDA;
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: relative;
+        padding: 10px;
+    } */
+    #imgbox img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    /* ***************************** Moon classes ************************** */
+    .headermoon {
+        background-color: #325172;
+    }
+    /* section1 background and its size*/
+    .featuremoon {
+        background-color: #325172;
+        width: 100%;
+        height: 400px;
+        display: flex;
+    }
+    /* coffee tales logo to center anything use display block and margin left and right auto */
+    #moonlogo {
+        display: block;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        margin-top: 50px;
+    }
+    /* section2 background and its size */
+    .visualmoon {
+        background-color: #FFFDF8;
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    /* position of the grid and gap */
+    .visual-block {
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 40px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    /* projects box design which containes img h4 a*/
+    /* #imgbox {
+        background-color: #EEDFDA;
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: relative;
+        padding: 10px;
+    } */
+    #imgboxm img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+}
+
+
 }
