@@ -55,6 +55,63 @@
     margin-right: auto;
     padding: 10px;
 }
+/* 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+dropdown menu here
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+.dropbtn {
+    position: absolute;
+    top: -5px;
+    left: 12px;
+    z-index: 888;
+    background-color: var(--greenD);
+    border-radius: 0 0 5px 5px;
+    padding: 8px 12px;
+    font-family: "Quicksand";
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: left;
+    color: var(--white);
+    position: fixed;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    position: fixed;
+    z-index: 100;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--greenL);
+    min-width: 160px;
+    width: 230px;
+    z-index: 1;
+    top: 30px;
+    left: 14px;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    padding: 6px 6px 6px 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--white);
+    display: block;
+    transition: 0.3s;
+}
+.dropdown-content a:hover {color: var(--greenD);}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {color: var(--greenL);}
+/* 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+dropdown menu AND here
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
 /* section1 background and its size*/
 .feature { 
     background-color: var(--white);
@@ -133,12 +190,11 @@ p {
     /* background-color: var(--white); */
     color: var(--greenD);
     transition: 0.5s ease;
-    opacity: 1;
     position: absolute;
-    top: 87%;
-    left: 26%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    /* top: 87%;
+    left: 26%; */
+    transform: translate(10%, 380px);
+    -ms-transform: translate(10%, 380px);
     font-size: 24px;
     font-family: 'Quicksand';
 }
@@ -146,29 +202,32 @@ p {
     color: var(--greenD);
     opacity: 1;
 } */
+
 #box a {
     padding: 8px;
-    background-color: var(--greenD);
     text-decoration: none;
-    color: var(--white);
     transition: 0.5s ease;
-    opacity: 1;
     position: absolute;
-    top: 87%;
-    left: 89%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    border-radius: 10px;
+    top: 86%;
+    left: 85%;
+    border-radius: 100px;
     font-family: 'futura';
 }
 #box a:hover {
     cursor: pointer;
-    background: var(--greenL);
-    color: var(--greenD);
+    transform: scale(1.2);
     position: absolute;
 }
-#box:hover a {
-    opacity: 1;
+.arrow {
+    border: solid var(--greenD);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 7px;
+    position: relative;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 footer {
     background-color: var(--white);
@@ -353,20 +412,20 @@ footer p {
         grid-template-rows: 1fr;
         gap: 40px;
         margin-top: 10%;
-        margin-left: 10%;
+        margin-left: 22%;
         margin-bottom: 10%;
     }
     /* projects box design which containes img h4 a*/
     #box {
         background-color: var(--white);
-        width: 270px;
+        width: 280px;
         height: 350px;
         display: flex;
         position: relative;
         padding: 10px;
     }
     #box img {
-        width: 250px;
+        width: 260px;
         height: 250px;
     }
     /* projects hove design and transition */
@@ -377,15 +436,11 @@ footer p {
         transition: scaleY(20px 10px);
     }
     #box h4 {
-        /* background-color: var(--white); */
         color: var(--greenD);
         transition: 0.5s ease;
-        opacity: 1;
         position: absolute;
-        top: 87%;
-        left: 26%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        transform: translate(5%, 280px);
+        -ms-transform: translate(5%, -110px);
         font-size: 20px;
         font-family: 'Quicksand';
     }
@@ -395,27 +450,29 @@ footer p {
     } */
     #box a {
         padding: 8px;
-        background-color: var(--greenD);
         text-decoration: none;
-        color: var(--white);
         transition: 0.5s ease;
-        opacity: 1;
         position: absolute;
-        top: 87%;
-        left: 89%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        top: 82%;
+        left: 84%;
         border-radius: 10px;
         font-family: 'futura';
     }
     #box a:hover {
         cursor: pointer;
-        background: var(--greenL);
-        color: var(--greenD);
+        transform: scale(1.2);
         position: absolute;
     }
-    #box:hover a {
-        opacity: 1;
+    .arrow {
+        border: solid var(--greenD);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 6px;
+        position: relative;
+    }
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
     }
     footer {
         background-color: var(--white);
@@ -444,11 +501,11 @@ footer p {
     /* coffee tales logo to center anything use display block and margin left and right auto */
     #coffeelogo {
         display: block;
-        width: 200px;
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
         padding: 10px;
-        margin-top: 15px;
+        margin-top: 55px;
     }
     /* section2 background and its size */
     .visualCT {
@@ -498,7 +555,7 @@ footer p {
         margin-left: auto;
         margin-right: auto;
         padding: 10px;
-        margin-top: 50px;
+        margin-top: 60px;
     }
     /* section2 background and its size */
     .visualmoon {
@@ -528,7 +585,7 @@ footer p {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 70%;
     }
 }
 
