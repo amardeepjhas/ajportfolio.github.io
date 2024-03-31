@@ -7,6 +7,10 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: Quicksand;
+    src: url(//font/Quicksand-VariableFont_wght.ttf);
+}
 :root {
     --white: #F8F6F3;
     --greenD: #265F2B;
@@ -60,53 +64,71 @@
 dropdown menu here
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
-.dropbtn {
-    position: absolute;
-    top: -5px;
-    left: 12px;
-    z-index: 888;
-    background-color: var(--greenD);
-    border-radius: 0 0 5px 5px;
-    padding: 8px 12px;
-    font-family: "Quicksand";
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    float: left;
-    color: var(--white);
-    position: fixed;
-}
+
+/* Dropdown styles */
+
 .dropdown {
+    max-width: 9em;
+    margin: -90px 0px;
     position: relative;
-    display: inline-block;
-    position: fixed;
-    z-index: 100;
+    width: 100%;
+}
+.dropdown-btn {
+    background: var(--greenL);
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    color: var(--greenD);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.arrow1 {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid var(--greenD);
+    transition: transform ease-in-out 0.3s;
 }
 .dropdown-content {
-    display: none;
+    list-style: none;
     position: absolute;
-    background-color: var(--greenL);
-    min-width: 160px;
-    width: 230px;
-    z-index: 1;
-    top: 30px;
-    left: 14px;
-    border-radius: 5px;
+    top: 3.2em;
+    width: 100%;
+    visibility: hidden;
+    overflow: hidden;
 }
-.dropdown-content a {
-    padding: 6px 6px 6px 32px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 14px;
-    color: var(--white);
+.dropdown-content li {
+    background: var(--greenL);
+    border-radius: 0.5em;
+    position: relative;
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: calc(60ms * var(--delay));
+}
+.dropdown-content.menu-open li {
+    right: 0;
+}
+.dropdown-content.menu-open {
+    visibility: visible;
+}
+.arrow1.arrow-rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown-content li:hover {
+    background: var(--greenD);
+}
+
+.dropdown-content li a {
     display: block;
-    transition: 0.3s;
+    padding: 0.7em 0.5em;
+    color: var(--white);
+    margin: 0.1em 0;
+    text-decoration: none;
 }
-.dropdown-content a:hover {color: var(--greenD);}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {color: var(--greenL);}
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 dropdown menu AND here
@@ -361,6 +383,81 @@ footer p {
         margin-right: auto;
         padding: 10px;
     }
+    /* 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+dropdown menu here
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+
+/* Dropdown styles */
+
+.dropdown {
+    max-width: 5em;
+    margin: -70px 0px;
+    position: relative;
+    width: 100%;
+}
+.dropdown-btn {
+    background: var(--greenL);
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    color: var(--greenD);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.arrow1 {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid var(--greenD);
+    transition: transform ease-in-out 0.3s;
+}
+.dropdown-content {
+    list-style: none;
+    position: absolute;
+    top: 3.2em;
+    width: 100%;
+    visibility: hidden;
+    overflow: hidden;
+}
+.dropdown-content li {
+    background: var(--greenL);
+    border-radius: 0.5em;
+    position: relative;
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: calc(60ms * var(--delay));
+}
+.dropdown-content.menu-open li {
+    right: 0;
+}
+.dropdown-content.menu-open {
+    visibility: visible;
+}
+.arrow1.arrow-rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown-content li:hover {
+    background: var(--greenD);
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 0.7em 0.5em;
+    color: var(--white);
+    margin: 0.1em 0;
+    text-decoration: none;
+}
+/* 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+dropdown menu AND here
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
     /* section1 background and its size*/
     .feature { 
         background-color: var(--white);
@@ -412,7 +509,7 @@ footer p {
         grid-template-rows: 1fr;
         gap: 40px;
         margin-top: 10%;
-        margin-left: 22%;
+        margin-left: 20%;
         margin-bottom: 10%;
     }
     /* projects box design which containes img h4 a*/
