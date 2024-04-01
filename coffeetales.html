@@ -17,10 +17,23 @@
     <title>Coffee Tales</title>
     </head>
     <body>
-        <div class="headerCT">
+        <section class="headerCT">
             <!-- <button onclick="history.back()">Go Back </button> -->
             <img id="logo" src="./image/logoforsite.png" alt="logo">
-        </div>
+            <div class="dropdown">
+                <button class="dropdown-btn" aria-label="menu button" aria-haspopup="menu" aria-expanded="false" aria-controls="dropdown-menu">
+                    <span>Menu</span>
+                    <span class="arrow1"></span>
+                </button>
+                <ul class="dropdown-content" role="menu" id="dropdown-menu">
+                    <li style="--delay: 1;"><a href="#">Home</a></li>
+                    <li style="--delay: 2;"><a href="index.html">Work</a></li>
+                    <li style="--delay: 3;"><a href="#">Services</a></li>
+                    <li style="--delay: 4;"><a href="#">About</a></li>
+                    <li style="--delay: 5;"><a href="#">Contact</a></li>
+                </ul>
+                </div>
+        </section>
         <section class="featureCT">
             <div class="container">
                 <div class="imgbg">
@@ -46,3 +59,21 @@
         </footer>
     </body>
 </html>
+
+<script>
+    const dropdownBtn = document.querySelector(".dropdown-btn");
+    const dropdownCaret = document.querySelector(".arrow1");
+    const dropdownContent = document.querySelector(".dropdown-content");
+    
+    // add click event to dropdown button
+    dropdownBtn.addEventListener("click", () => {
+      // add rotate to caret element
+      dropdownCaret.classList.toggle("arrow-rotate");
+      // add open styles to menu element
+      dropdownContent.classList.toggle("menu-open");
+      dropdownBtn.setAttribute(
+        "aria-expanded",
+        dropdownBtn.getAttribute("aria-expanded") === "true" ? "false" : "true"
+      );
+    });
+    </script>

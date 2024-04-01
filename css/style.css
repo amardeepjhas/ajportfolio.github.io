@@ -47,21 +47,22 @@
 .header {
     /* position: relative; */
     width: 100%;
-    height: 130px;
+    height: 160px;
     background-color: var(--white);
     /* border-bottom:1px solid var(--greenD); */
 }
 #logo {
     /* position: absolute; */
     display: block;
-    width: 9%;
+    width: 10%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    padding-top: 19px;
 }
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-dropdown menu here
+dropdown menu here desktop
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 
@@ -107,6 +108,7 @@ dropdown menu here
     right: 100%;
     transition: 0.5s;
     transition-delay: calc(60ms * var(--delay));
+    font-family: 'Quicksand';
 }
 .dropdown-content.menu-open li {
     right: 0;
@@ -131,14 +133,14 @@ dropdown menu here
 }
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-dropdown menu AND here
+dropdown menu AND here desktop
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 /* section1 background and its size*/
 .feature { 
     background-color: var(--white);
     width: 100%;
-    height: 600px;
+    height: 550px;
     display: flex;
 }
 /* container contains the h1 and p  and this is centered*/
@@ -160,7 +162,7 @@ dropdown menu AND here
     color: var(--greenD);
     text-align: center;
     margin: 15px;
-    font-size: 40px;
+    font-size: 3.5em;
     font-family: 'Quicksand';
 }
 /* p in section1 */
@@ -171,6 +173,7 @@ p {
     font-family: 'Futura';
     text-align: center;
 }
+
 /* section2 background and its size */
 .project {
     background-color: var(--greenL);
@@ -184,9 +187,9 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 40px;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-left: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
 }
 /* projects box design which containes img h4 a*/
 #box {
@@ -220,11 +223,6 @@ p {
     font-size: 24px;
     font-family: 'Quicksand';
 }
-/* #box:hover h4 {
-    color: var(--greenD);
-    opacity: 1;
-} */
-
 #box a {
     padding: 8px;
     text-decoration: none;
@@ -251,6 +249,101 @@ p {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
+
+.aboutme {
+    background-color: var(--white);
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+/* position of the grid and gap */
+.aboutcont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+/* about box design which containes img h4 p*/
+#aboutbox {
+    width: 1150px;
+    height: 450px;
+    display: flex;
+    position: relative;
+}
+/* #aboutbox img{
+    width: 450px;
+    height: 450px;
+} */
+/* h1 in about */
+#abouttitle h1 {
+    color: var(--greenD);
+    text-align: left;
+    margin: 35px 0px 0px 45px;
+    font-size: 3em;
+    font-family: 'Quicksand';
+}
+/* p in about */
+#abouttitle p {
+    width: 80%;
+    color: var(--black);
+    line-height: 25px;
+    font-size: 1.1em;
+    font-family: 'Futura';
+    text-align: left;
+    margin: 20px 0 0 40px;
+    padding: 10px;
+}
+
+.services {
+    background-color: var(--greenL);
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+/* position of the grid and gap */
+.servicescont {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+/* service box design which containes img h4 a*/
+#servicetitle {
+    width: 1150px;
+    height: 450px;
+    display: flex;
+    position: relative;
+}
+#servicebox  img{
+    width: 450px;
+    height: 450px;
+}
+/* h1 in service */
+#servicetitle h1 {
+    color: var(--greenD);
+    text-align: left;
+    margin: 35px 0 0 0;
+    font-size: 3em;
+    font-family: 'Quicksand';
+    width: 100%;
+}
+/* p in service */
+#servicetitle p {
+    width: 80%;
+    color: var(--black);
+    line-height: 25px;
+    font-size: 1.1em;
+    font-family: 'Futura';
+    text-align: left;
+    margin: 120px 0 0 -840px;
+    padding: 10px;
+    padding-right: 13%;
+}
+
 footer {
     background-color: var(--white);
     width: 100%;
@@ -264,7 +357,7 @@ footer p {
     margin: auto;
     padding: 50px;
 }
-/* ********************* Coffee Tales ******************************* */
+/* ********************* Coffee Tales Desktop ******************************* */
 .headerCT {
     background-color: #EEDFDA;
 }
@@ -278,10 +371,11 @@ footer p {
 /* coffee tales logo to center anything use display block and margin left and right auto */
 #coffeelogo {
     display: block;
-    width: 500px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    margin-top: 20%;
 }
 /* section2 background and its size */
 .visualCT {
@@ -298,22 +392,13 @@ footer p {
     margin-top: 10%;
     margin-bottom: 10%;
 }
-/* projects box design which containes img h4 a*/
-/* #imgbox {
-    background-color: #EEDFDA;
-    width: 100%;
-    height: auto;
-    display: flex;
-    position: relative;
-    padding: 10px;
-} */
 #imgbox img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
 }
-/* ***************************** Moon classes ************************** */
+/* ***************************** Moon classes Desktop ************************** */
 .headermoon {
     background-color: #325172;
 }
@@ -327,10 +412,11 @@ footer p {
 /* coffee tales logo to center anything use display block and margin left and right auto */
 #moonlogo {
     display: block;
-    width: 500px;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    margin-top: 20%;
 }
 /* section2 background and its size */
 .visualmoon {
@@ -378,14 +464,14 @@ footer p {
     #logo {
         /* position: absolute; */
         display: block;
-        width: 20%;
+        width: 23%;
         margin-left: auto;
         margin-right: auto;
         padding: 10px;
     }
     /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-dropdown menu here
+dropdown menu here mobile
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 
@@ -393,7 +479,7 @@ dropdown menu here
 
 .dropdown {
     max-width: 5em;
-    margin: -70px 0px;
+    margin: -64px 0 0 0;
     position: relative;
     width: 100%;
 }
@@ -431,6 +517,7 @@ dropdown menu here
     right: 100%;
     transition: 0.5s;
     transition-delay: calc(60ms * var(--delay));
+    font-family: 'Quicksand';
 }
 .dropdown-content.menu-open li {
     right: 0;
@@ -455,7 +542,7 @@ dropdown menu here
 }
 /* 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-dropdown menu AND here
+dropdown menu AND here mobile
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
     /* section1 background and its size*/
@@ -470,28 +557,22 @@ dropdown menu AND here
         /* border:solid 1px var(--greenD); */
         width: 60%;
         margin: auto;
-        padding: 5px;
-        margin-top: 20px;
+        padding: 2px;
+        margin-top: 15%;
     }
-    /* visible light green BG with dark green shadow behind the texts */
-    /* .introcont {
-        background-color: var(--greenL);
-        box-shadow: 10px 10px 20px var(--greenD);
-        padding: 20px;
-    } */
     /* h1 in section1 */
     #introtitle {
         color: var(--greenD);
         text-align: center;
         margin: 15px;
-        font-size: 26px;
+        font-size: 1.4em;
         font-family: 'Quicksand';
     }
     /* p in section1 */
     p {
         color: var(--black);
         line-height: 22px;
-        font-size: 14px;
+        font-size: 0.8em;
         font-family: 'Futura';
         text-align: center;
     }
@@ -508,8 +589,8 @@ dropdown menu AND here
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         gap: 40px;
+        margin: auto;
         margin-top: 10%;
-        margin-left: 20%;
         margin-bottom: 10%;
     }
     /* projects box design which containes img h4 a*/
@@ -541,10 +622,6 @@ dropdown menu AND here
         font-size: 20px;
         font-family: 'Quicksand';
     }
-    /* #box:hover h4 {
-        color: var(--greenD);
-        opacity: 1;
-    } */
     #box a {
         padding: 8px;
         text-decoration: none;
@@ -584,7 +661,7 @@ dropdown menu AND here
         margin: auto;
         padding: 10px;
     }
-    /* ********************* Coffee Tales ******************************* */
+    /* ********************* Coffee Tales Mobile ******************************* */
     .headerCT {
         background-color: #EEDFDA;
     }
@@ -598,11 +675,11 @@ dropdown menu AND here
     /* coffee tales logo to center anything use display block and margin left and right auto */
     #coffeelogo {
         display: block;
-        width: 300px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         padding: 10px;
-        margin-top: 55px;
+        margin-top: 55%;
     }
     /* section2 background and its size */
     .visualCT {
@@ -619,22 +696,13 @@ dropdown menu AND here
         margin-top: 10%;
         margin-bottom: 10%;
     }
-    /* projects box design which containes img h4 a*/
-    /* #imgbox {
-        background-color: #EEDFDA;
-        width: 100%;
-        height: auto;
-        display: flex;
-        position: relative;
-        padding: 10px;
-    } */
     #imgbox img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 80%;
     }
-    /* ***************************** Moon classes ************************** */
+    /* ***************************** Moon classes Mobile ************************** */
     .headermoon {
         background-color: #325172;
     }
@@ -669,15 +737,6 @@ dropdown menu AND here
         margin-top: 10%;
         margin-bottom: 10%;
     }
-    /* projects box design which containes img h4 a*/
-    /* #imgbox {
-        background-color: #EEDFDA;
-        width: 100%;
-        height: auto;
-        display: flex;
-        position: relative;
-        padding: 10px;
-    } */
     #imgboxm img {
         display: block;
         margin-left: auto;
