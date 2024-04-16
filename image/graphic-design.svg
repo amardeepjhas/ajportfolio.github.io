@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 365">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5, .cls-6 {
+        stroke: #265F2B;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke-width: 8px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #B7C6BC;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+        stroke-width: 3.6px;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        stroke-width: 1.81px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect class="cls-1" x="4" y="4" width="357" height="357" rx="12"/>
+        <path class="cls-2" d="M198.84,73.31,142.32,231.22a15,15,0,0,0,.61,11.57l27.88,58,57-.05,31.49-56.46a15,15,0,0,0,1-12.38L203.62,73.31l.19,141a2.39,2.39,0,0,1-2.4,2.4h0a2.41,2.41,0,0,1-2.4-2.4Z"/>
+        <polygon class="cls-2" points="170.81 306.62 227.82 306.75 227.82 332 170.81 332 170.81 306.62"/>
+        <g>
+          <path class="cls-3" d="M112.68,104.69v10.88H101.81V104.69h10.87m1.82-1.81H100v14.5h14.5v-14.5Z"/>
+          <path class="cls-3" d="M206.9,57.58V68.46H196V57.58H206.9m1.81-1.81H194.22v14.5h14.49V55.77Z"/>
+          <path class="cls-4" d="M107.25,110.13S151.64,31.31,201.47,63"/>
+          <line class="cls-5" x1="155.26" y1="31.31" x2="238.61" y2="89.29"/>
+          <circle class="cls-6" cx="155.26" cy="31.31" r="1.81"/>
+          <circle class="cls-6" cx="238.61" cy="89.29" r="1.81"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
