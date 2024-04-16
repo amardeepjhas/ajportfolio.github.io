@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 450 450" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1" vectornator:layerName="Layer 1">
+<g opacity="1" vectornator:layerName="Group 1">
+<path d="M336.881 450L113.119 450C50.8992 450 0 399.094 0 336.881L0 113.119C0 50.8992 50.8992 0 113.119 0L336.881 0C399.101 0 450 50.8992 450 113.119L450 336.881C450 399.094 399.101 450 336.881 450" fill="#b7c6bc" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path 4"/>
+<path d="M338.145 285.242C338.145 314.457 314.463 338.146 285.249 338.146L164.754 338.146C135.539 338.146 111.851 314.457 111.851 285.242L111.851 164.755C111.851 135.533 135.539 111.852 164.754 111.852L285.249 111.852C314.463 111.852 338.145 135.533 338.145 164.755L338.145 285.242ZM285.558 90.0409L164.445 90.0409C123.354 90.0409 90.04 123.355 90.04 164.446L90.04 285.552C90.04 326.642 123.354 359.956 164.445 359.956L285.558 359.956C326.642 359.956 359.963 326.642 359.963 285.552L359.963 164.446C359.963 123.355 326.642 90.0409 285.558 90.0409" fill="#265f2b" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path 5"/>
+<path d="M224.999 271.393C199.37 271.393 178.6 250.623 178.6 225.001C178.6 199.372 199.37 178.602 224.999 178.602C250.628 178.602 271.398 199.372 271.398 225.001C271.398 250.623 250.628 271.393 224.999 271.393M224.999 153.866C185.716 153.866 153.871 185.71 153.871 225.001C153.871 264.284 185.716 296.129 224.999 296.129C264.283 296.129 296.127 264.284 296.127 225.001C296.127 185.71 264.283 153.866 224.999 153.866" fill="#265f2b" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path 6"/>
+<path d="M314.504 151.501C314.504 160.311 307.36 167.462 298.543 167.462C289.74 167.462 282.589 160.311 282.589 151.501C282.589 142.691 289.74 135.54 298.543 135.54C307.36 135.54 314.504 142.691 314.504 151.501" fill="#265f2b" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path 7"/>
+</g>
+</g>
+</svg>
