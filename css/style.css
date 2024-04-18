@@ -138,6 +138,44 @@ footer p {
     color: var(--greenL);
     font-size: 2rem;
 }
+
+.teas-style h2{
+    color: #fecc00;
+}
+.teas-style2 h2, .teas-style2 h5 {
+    color: #fecc00;
+}
+.teas-style {
+    background-color: #a2b8bf;
+    height: 500px;
+}
+.teas-style2 {
+    background-color: #f2efee;
+}
+.teas-nav {
+    background-color: #a2b8bf;
+}
+.teas-nav a {
+    color: #fecc00;
+}
+.teas-nav a:hover {
+    color: #f2efee;
+}
+#teaslogo {
+    width: 30%;
+}
+.parag {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.teas-style a {
+    background-color: #fecc00;
+    color: #f2efee;
+}
+.teas-style a:hover {
+    background-color: #f2efee;
+    color: #fecc00;
+}
 @media screen and (max-width: 575.98px) {
 
     .nav { display: none; }

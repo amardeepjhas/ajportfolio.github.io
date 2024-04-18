@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.35 64.16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #0f0f0f;
+        stroke-miterlimit: 10;
+        stroke-width: 0.5px;
+      }
+
+      .cls-2 {
+        fill: #fecc00;
+      }
+
+      .cls-3 {
+        font-size: 16px;
+        fill: #0f0f0f;
+        font-family: MostraNuova-Regular, Mostra Nuova;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Backgrounds">
+      <g>
+        <path class="cls-1" d="M23.55,43.68A21.74,21.74,0,1,1,42.58,15"/>
+        <path class="cls-1" d="M22,36.32A14.33,14.33,0,1,1,35.5,17.22"/>
+        <path class="cls-2" d="M22.22,21.56,65.08,37.08a.43.43,0,0,1-.14.84,37.57,37.57,0,0,0-9.42,1.35A20.84,20.84,0,0,0,41.21,53.92a67.35,67.35,0,0,0-1.94,9.85.43.43,0,0,1-.83.12L21.67,22.13A.43.43,0,0,1,22.22,21.56Z"/>
+        <text class="cls-3" transform="translate(35.15 24.57)">click!</text>
+      </g>
+    </g>
+  </g>
+</svg>
