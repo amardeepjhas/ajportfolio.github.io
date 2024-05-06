@@ -176,6 +176,73 @@ footer p {
     background-color: #f2efee;
     color: #fecc00;
 }
+.emerald-nav {
+    background-color: #D6D1CA;
+}
+.emerald-nav a {
+    color: #323E48;
+}
+.emerald-nav a:hover {
+    color: #4B858E;
+}
+.emerald-style {
+    background-color: #D6D1CA;
+}
+.emerald-style2 {
+    background-color: #D6D1CA;
+    height: 500px;
+}
+.emerald-style a {
+    background-color: #4B858E;
+    color: #D6D1CA;
+}
+.emerald-style a:hover {
+    background-color: #323E48;
+    color: #D6D1CA;
+}
+.emerald-style h2, .emerald-style h5 {
+    color: #323E48;
+}
+
+.sandwich-nav {
+    background-color: #f4f5f0;
+}
+.sandwich-nav a {
+    color: #3049D9;
+}
+.sandwich-nav a:hover {
+    color: #3787f8;
+}
+.sandwich-style {
+    background-color: #f4f5f0;
+}
+.sandwich-style a {
+    background-color: #3787f8;
+    color: #f4f5f0;
+}
+.sandwich-style a:hover {
+    background-color: #3049D9;
+    color: #f4f5f0;
+}
+.sandwich-style h2, .sandwich-style h5 {
+    color: #3049D9;
+}
+
+.ps5-nav {
+    background-color: #ffffff;
+}
+.ps5-nav a {
+    color: #00439C;
+}
+.ps5-nav a:hover {
+    color: #0070CC;
+}
+.ps5-style {
+    background-color: #ffffff;
+}
+.ps5-style h2, .ps5-style h5{
+    color: #000000;
+}
 @media screen and (max-width: 575.98px) {
 
     .nav { display: none; }
