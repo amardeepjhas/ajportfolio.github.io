@@ -65,7 +65,7 @@ html, body {
     font-size: medium;
 }
 .nav a:hover {
-    color: var(--greenL);
+    color: var(--pink);
 }
 .active {
     background-color: var(--pink);
