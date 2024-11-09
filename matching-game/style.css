@@ -1,0 +1,192 @@
+:root {
+    --primary: #ffffff; 
+    --light: #ffffff; 
+    --backcolor: #ffffff;
+    --frontcolor: #ffffff; 
+    --shadow: 0 1px 5px #10104b; 
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(./fonts/HelveticaNeue.ttc);
+}
+
+body {
+    background: url(./img/background2.svg) no-repeat center center fixed;
+    background-size: cover;
+    bottom: 5px;
+    overflow: hidden;
+    font-family: HelveticaNeue;
+}
+
+#splashpage {
+    position: absolute;
+    width: 100%;
+    top: -200px;
+}
+
+#obj {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 15%;
+    left: 15%;
+    visibility: hidden;
+}
+
+.gameBoard {
+    visibility: hidden;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+}
+.card {
+    margin: 20px;
+    min-width: 0%;
+    perspective: 600px;
+    cursor: pointer;
+    -webkit-perspective: 600px;
+}
+
+.faces {
+    width: 120px;
+    height: 140px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(206, 180, 180);
+    border-radius: 5px;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.face>* {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.front {
+    background: var(--primary);
+}
+
+.back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+#win {
+    position: absolute;
+    visibility: hidden;
+    top: -50%;
+
+}
+
+.container {
+    /* background-color: rgba(37, 65, 90, 0.479); */
+    width: 1020px;
+    height: 580px;
+    margin-left: 200px;
+    margin-top: 20px;
+    border-radius: 20px ;
+}
+
+@media only screen and (max-width: 960px) {
+
+    body {
+        background: url(./img/background2.svg) no-repeat center center fixed;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        /* top: -50px; */
+        overflow: hidden;
+        margin: 0;
+    }
+
+    #splashpage {
+        position: absolute;
+        width: 70%;
+        height: auto;
+        top: 90%;
+        /* left: 25%; */
+    }
+
+    #obj {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        /* top: 39%; */
+        left: 25%;
+        visibility: hidden;
+    }
+    
+    .gameBoard {
+        visibility: hidden;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
+    }
+    .card {
+        margin: 0px;
+        min-width: 0%;
+        perspective: 600px;
+        cursor: pointer;
+        -webkit-perspective: 600px;
+    }
+    
+    .faces {
+        width: 100px;
+        height: 116px;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+    }
+    
+    .face {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgb(206, 180, 180);
+        border-radius: 5px;
+        position: absolute;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+    
+    .face>* {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
+    
+    .front {
+        background: var(--primary);
+    }
+    
+    .back {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+    }
+    
+    #win {
+        position: absolute;
+        visibility: hidden;
+        top: -50%;
+    }
+    
+    .container {
+        /* background-color: rgba(37, 65, 90, 0.479); */
+        width: 600px;
+        height: 200px;
+        margin-left: 90px;
+        margin-top: 55px;
+        border-radius: 20px ;
+    }
+}

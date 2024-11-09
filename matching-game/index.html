@@ -1,0 +1,42 @@
+<!-- Amardeep Jhas 100773775 -->
+<!-- matching game-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Amardeep Jhas" />
+    <meta name="description" content="matching game" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+    <title>matching game </title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- front card set up -->
+    <object data="./img/splashpage.svg" type="image/svg+xml" id="splashpage"></object>
+    <!-- page layout -->
+    <div class="container">
+    <div class="gameBoard">
+        <div class="card">
+            <div class="faces">
+                <div class="face front">
+                    <img id='imgX' src="./img/deckA/card01.svg" alt="card 1"/>
+                </div>
+                <div class="face back">
+                    <img src="./img/deckA/card00.svg" alt="back cover" id="bk">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- 2 buttons for select deck -->
+    <object data="./img/buttons.svg" type="image/svg+xml" id="obj"></object>
+    <img src="./img/win.svg" alt="win graphic" id="win">
+</body>
+<!-- external js file-->
+<script src="./js/script.js"> </script>
+<!-- Gsap 3 libray-->
+<script src="./js/gsap.min.js"> </script>
+</html>
