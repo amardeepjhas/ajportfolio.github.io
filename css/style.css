@@ -107,7 +107,7 @@ header p {
 }
 .section-style a:hover , 
 .section-style2 a:hover {
-    background-color: #edcb32;
+    background-color: var(--pink);
     color: var(--white);
     /* background-color: var(--red); */
 }
