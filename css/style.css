@@ -111,7 +111,14 @@ header p {
     color: var(--white);
     /* background-color: var(--red); */
 }
-
+.section-stylec {
+    background-color: var(--white);
+    height: 2030px;
+}
+#visible {
+    height: 100%;
+    overflow-x: hidden;
+}
 .coffeetale-style {
     background-color: #EEDFDA;
     height: 500px;
