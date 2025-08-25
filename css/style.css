@@ -119,6 +119,26 @@ header p {
     height: 100%;
     overflow-x: hidden;
 }
+.solte-style {
+    background-color: #7a1f3d;
+    height: 500px;
+}
+.solte-style2 {
+    background-color: #e6e6e6;
+    height: auto;
+}
+.solte-nav{
+    background-color: #7a1f3d;
+}
+.solte-nav a{
+    color: #e6e6e6;
+}
+.solte-nav a:hover{
+    color: #FFC2D1;
+}
+#soltelogo{
+    width: 30%;
+}
 .coffeetale-style {
     background-color: #EEDFDA;
     height: 500px;
