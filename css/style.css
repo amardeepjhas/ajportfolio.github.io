@@ -10,6 +10,7 @@
 html, body {
     font-family: "Nunito";
 }
+
 /* start of the divine fury poster*/
 /* .postercont {
     width: 726px;
@@ -37,65 +38,76 @@ html, body {
 /* end of the divine fury poster*/
 
 @font-face {
+    font-family: 'Italiana';
+    src: url(../font/Italiana/Italiana-Regular.ttf);
+}
+@font-face {
     font-family: 'Quicksand';
     src: url(../font/Quicksand-VariableFont_wght.ttf);
 }
-@font-face {
-    font-family: 'Nunito';
-    src: url(../font/Nunito-VariableFont_wght.ttf);
-}
 :root {
     --white: #F8F6F3;
-    --greenD: #265F2B;
-    --greenL: #B7C6BC;
+    --greenD: #89B6A5;
+    --greenL: #C9EDDC;
     --red: #9E2141;
-    --pink: #FFC2D1;
+    --purple: #9792E3;
+    --yellow: #f0a202;
     --black: #303030;
 }
 
 .nav-style {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100px;
     background-color: var(--white);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 1;
 }
 .nav a {
-    color: var(--red);
-    font-family: 'Quicksand';
-    font-weight: bold;
-    font-size: medium;
+    color: var(--black);
+    font-family: 'Italiana';
+    font-weight: bolder;
+    font-size: large;
+    margin-top: -30px;
 }
 .nav a:hover {
-    color: var(--pink);
+    color: var(--purple);
 }
 .active {
-    background-color: var(--pink);
-    color: var(--white);
+    background-color: var(--yellow);
+    color: var(--purple);
     border-radius: 0.375rem;
 }
 .nav .active:hover {
     color: var(--white);
 }
-header {
-    height: auto;
+.header-style {
+    height: fit-content;
+    background-color: var(--white);
 }
+.header-hero{
+    width: 90%;
+}
+
 .section-style {
     background-color: var(--white);
     height: fit-content;
 }
 .section-style2 {
-    background-color: var(--pink);
+    background-color: var(--purple);
     height: fit-content;
 }
 
 h1, h2, h3, h4, h5 {
     color: var(--red);
-    font-family: 'Quicksand';
+    font-family: 'Italiana';
 }
 h1 {
     width: 50%;
 }
 header p {
-    font-family: 'Nunito';
+    font-family: 'Quicksand';
     color: var(--black);
     padding-left: 20%;
     padding-right: 20%;
@@ -110,6 +122,10 @@ header p {
     background-color: var(--pink);
     color: var(--white);
     /* background-color: var(--red); */
+}
+#about p {
+    width: 600px;
+    font-size: 25px;
 }
 .section-stylec {
     background-color: var(--white);
@@ -182,17 +198,20 @@ header p {
     display: none;
 }
 footer {
-    background-color: var(--black);
+    background-color: var(--greenD);
 }
 footer p {
-    color: var(--pink);
-    font-family: 'Nunito';
+    color: var(--black);
+    font-family: 'Quicksand';
 }
 .fab {
-    color: var(--pink);
+    color: var(--red);
     font-size: 2rem;
 }
-
+.fab:hover {
+    color: var(--yellow);
+    font-size: 2rem;
+}
 .teas-style h2{
     color: #fecc00;
 }
@@ -348,12 +367,16 @@ footer p {
         width: 90%;
     }
     header p {
-        font-family: 'Nunito';
+        font-family: 'Italiana';
         color: var(--black);
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
-
+    .header-hero{
+        width: 155%;
+        margin-top: 20%;
+        margin-left: -26%;
+    }
 
     .dropdown {
         max-width: 9em;
@@ -361,22 +384,23 @@ footer p {
         width: 100%;
     }
     .dropdown-btn {
-        background: var(--pink);
+        background: var(--white);
         font-size: 18px;
         width: 100%;
         border: none;
-        color: var(--red);
+        color: var(--black);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0.5em 0.5em;
         border-radius: 0.5em;
         cursor: pointer;
+        margin-top: -20%;
     }
     .arrow1 {
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 6px solid var(--red);
+        border-top: 6px solid var(--black);
         transition: transform ease-in-out 0.3s;
     }
     .dropdown-content {
@@ -389,13 +413,13 @@ footer p {
         z-index: 1;
     }
     .dropdown-content li {
-        background: var(--pink);
+        background: var(--black);
         border-radius: 0.5em;
         position: relative;
         left: 100%;
         transition: 0.5s;
         transition-delay: calc(60ms * var(--delay));
-        font-family: 'Quicksand';
+        font-family: 'Italiana';
         margin-top: 2px;
         width: 6rem;
     }
@@ -410,15 +434,28 @@ footer p {
     }
     
     .dropdown-content li:hover {
-        color: var(--greenD);
+        color: var(--purple);
     }
     
     .dropdown-content li a {
         display: block;
         padding: 0.7em 0.5em;
-        color: var(--white);
+        color: var(--black);
         margin: 0.1em 0;
         text-decoration: none;
+    }
+
+    #about h2 {
+        font-size: 22px;
+    }
+    
+    #about p {
+        width: 100%;
+        height: auto;
+    }
+
+    #work h2 {
+        font-size: 22px;
     }
 
     #coffeelogo, #ps5logo, #emeraldlogo  {
@@ -459,18 +496,15 @@ footer p {
 
     .nav { display: none; }
     
-    
-
     h1 {
         width: 70%;
     }
     header p {
-        font-family: 'Nunito';
+        font-family: 'Italiana';
         color: var(--black);
         padding-left: 10%;
         padding-right: 10%;
     }
-
     
     .dropdown {
         max-width: 6rem;
@@ -479,22 +513,23 @@ footer p {
         float: inline-end;
     }
     .dropdown-btn {
-        background: var(--pink);
+        background: var(--white);
         font-size: 18px;
         width: 100%;
         border: none;
-        color: var(--red);
+        color: var(--black);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0.5em 0.5em;
         border-radius: 0.5em;
         cursor: pointer;
+        margin-top: -20%;
     }
     .arrow1 {
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 6px solid var(--red);
+        border-top: 6px solid var(--black);
         transition: transform ease-in-out 0.3s;
     }
     .dropdown-content {
@@ -507,13 +542,13 @@ footer p {
         z-index: 1;
     }
     .dropdown-content li {
-        background: var(--pink);
+        background: var(--white);
         border-radius: 0.5em;
         position: relative;
         left: 100%;
         transition: 0.5s;
         transition-delay: calc(60ms * var(--delay));
-        font-family: Quicksand;
+        font-family: 'Italiana';
         margin-top: 2px;
         width: 6rem;
     }
@@ -528,17 +563,31 @@ footer p {
     }
     
     .dropdown-content li:hover {
-        color: var(--red);
+        color: var(--purple);
     }
     
     .dropdown-content li a {
         display: block;
         padding: 0.7em 0.5em;
-        color: var(--white);
+        color: var(--black);
         margin: 0.1em 0;
         text-decoration: none;
     }
 
+    #about h2 {
+        font-size: 22px;
+    }
+    
+    #about p {
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    #work h2 {
+        font-size: 22px;
+    }
+    
     #coffeelogo, #ps5logo, #emeraldlogo, #teaslogo, #sandwichlogo {
         width: 70%;
         padding-top: 3rem;
