@@ -359,24 +359,24 @@ footer p {
     height: 500px;
 }
 .matchgame-style2 {
-    background-color: #d9aa7b;
+    background-color: var(--white);
     height: auto;
 }
 .matchgame-nav{
-    background-color: #eebc8a;
+    background-color: var(--white);
 }
 .matchgame-nav a {
-    color: #9E005D;
+    color: var(--black);
 }
 .matchgame-nav a:hover {
-    color: #2D967D;
+    color: var(--purple);
 }
 .matchgame-style h2, .matchgame-style2 h2 {
     color: #9E005D;
 }
 #matchgamelogo {
-    width: 40%;
-    margin-top: 15%;
+    width: 45%;
+    margin-top: 6%;
 }
 .matchgame-style a {
     background-color: #9E005D;
