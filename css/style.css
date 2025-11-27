@@ -55,6 +55,10 @@ html, body {
     --black: #303030;
 }
 
+.invisible {
+    display: none;
+}
+
 .nav-style {
     width: 100%;
     height: 100px;
@@ -95,7 +99,7 @@ html, body {
     height: fit-content;
 }
 .section-style2 {
-    background-color: var(--purple);
+    background-color: var(--white);
     height: fit-content;
 }
 
@@ -103,8 +107,10 @@ h1, h2, h3, h4, h5 {
     color: var(--red);
     font-family: 'Italiana';
 }
-h1 {
+.headerh1 {
     width: 50%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 header p {
     font-family: 'Quicksand';
@@ -119,7 +125,7 @@ header p {
 }
 .section-style a:hover , 
 .section-style2 a:hover {
-    background-color: var(--pink);
+    background-color: var(--purple);
     color: var(--white);
     /* background-color: var(--red); */
 }
@@ -140,40 +146,42 @@ header p {
     height: 500px;
 }
 .solte-style2 {
-    background-color: #e6e6e6;
+    background-color: var(--white);
     height: auto;
 }
 .solte-nav{
-    background-color: #7a1f3d;
+    background-color: var(--white);
 }
 .solte-nav a{
-    color: #e6e6e6;
+    color: var(--black);
 }
 .solte-nav a:hover{
-    color: #FFC2D1;
+    color: var(--purple);
 }
 #soltelogo{
     width: 30%;
+    margin-top: 15%;
 }
 .coffeetale-style {
     background-color: #EEDFDA;
     height: 500px;
 }
 .coffeetale-style2 {
-    background-color: #EEDFDA;
+    background-color: var(--white);
     height: auto;
 }
 .coffeetale-nav{
-    background-color: #EEDFDA;
+    background-color: var(--white);
 }
 .coffeetale-nav a {
-    color: #58423A;
+    color: var(--black);
 }
 .coffeetale-nav a:hover {
-    color: #43AA95;
+    color: var(--purple);
 }
 #coffeelogo {
     width: 40%;
+    margin-top: 15%;
 }
 #case {
     width: 80%;
@@ -183,13 +191,20 @@ header p {
     height: 500px;
 }
 .moon-style2 {
-    background-color: #FFFDF8;
+    background-color: var(--white);
 }
 .moon-nav {
-    background-color: #325172;
+    background-color: var(--white);
 }
 .moon-nav a {
-    color: #FFFDF8;
+    color: var(--black);
+}
+.moon-nav a:hover {
+    color: var(--purple);
+}
+#moonlogo {
+    width: 40%;
+    margin-top: 15%;
 }
 #case2 {
     width: 70%;
@@ -223,43 +238,44 @@ footer p {
     height: auto;
 }
 .teas-style2 {
-    background-color: #f2efee;
+    background-color: var(--white);
 }
 .teas-nav {
-    background-color: #a2b8bf;
+    background-color: var(--white);
 }
 .teas-nav a {
-    color: #fecc00;
+    color: var(--black);
 }
 .teas-nav a:hover {
-    color: #f2efee;
+    color: var(--purple);
 }
 #teaslogo, #sandwichlogo {
     width: 30%;
+    margin-top: 10%;
 }
 /* .parag {
     padding-left: 2%;
     padding-right: 2%;
 } */
-.teas-style a {
+.teas-style2 a {
     background-color: #fecc00;
     color: #f2efee;
 }
-.teas-style a:hover {
+.teas-style2 a:hover {
     background-color: #f2efee;
     color: #fecc00;
 }
 .emerald-nav {
-    background-color: #D6D1CA;
+    background-color: var(--white);
 }
 .emerald-nav a {
-    color: #323E48;
+    color: var(--black);
 }
 .emerald-nav a:hover {
-    color: #4B858E;
+    color: var(--purple);
 }
 .emerald-style {
-    background-color: #D6D1CA;
+    background-color: var(--white);
 }
 .emerald-style2 {
     background-color: #D6D1CA;
@@ -276,18 +292,26 @@ footer p {
 .emerald-style h2, .emerald-style h5 {
     color: #323E48;
 }
+#emeraldlogo{
+    width: 30%;
+    margin-top: 15%;
+}
 
 .sandwich-nav {
-    background-color: #f4f5f0;
+    background-color: var(--white);
 }
 .sandwich-nav a {
-    color: #3049D9;
+    color: var(--black);
 }
 .sandwich-nav a:hover {
-    color: #3787f8;
+    color: var(--purple);
+}
+.sandwich-style2 {
+    background-color: #f4f5f0;
+    width: auto;
 }
 .sandwich-style {
-    background-color: #f4f5f0;
+    background-color: var(--white);
 }
 .sandwich-style a {
     background-color: #3787f8;
@@ -302,19 +326,20 @@ footer p {
 }
 
 .ps5-nav {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 .ps5-nav a {
-    color: #00439C;
+    color: var(--black);
 }
 .ps5-nav a:hover {
-    color: #0070CC;
+    color: var(--purple);
 }
-#ps5logo, #emeraldlogo {
+#ps5logo {
     width: 30%;
+    margin-top: 15%;
 }
 .ps5-style {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 .ps5-style2 {
     background-color: #ffffff;
@@ -323,10 +348,12 @@ footer p {
 .ps5-style h2, .ps5-style h5{
     color: #000000;
 }
+#posterps5 {
+    width: 80%;
+}
 #poster {
     width: 50%;
 }
-
 .matchgame-style {
     background-color: #eebc8a;
     height: 500px;
@@ -349,6 +376,7 @@ footer p {
 }
 #matchgamelogo {
     width: 40%;
+    margin-top: 15%;
 }
 .matchgame-style a {
     background-color: #9E005D;
